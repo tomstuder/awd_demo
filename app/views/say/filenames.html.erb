@@ -1,6 +1,6 @@
 <h1>File Names in Current Directory</h1>
 <ul>
 	<% for file in @files %>
-	<li><%= file; %></li>
+	<li><%= link_to file, file[/\/.*/] %></li>
 	<% end %>
 </ul>
